@@ -1,10 +1,19 @@
 #include <iostream>
-#include "Person.h"
-int main(){
-    Person jane = Person("Jane", 60.0f);
-    Person john = Person("john", 75.0f);
-    float totalWeight = jane + john;
-    cout << "Total weight:" << endl;
-    return 0;
+#include "Rectangle.h"
+using namespace std;
+int main() {
+Rectangle rect; //creating an object named rect
+float length;
+float width ;
+cout << "Enter the length of the rectangle: ";
+cin >> length;
+cout << "Enter the width of the rectangle: ";
+cin >> width;
+rect.setWidth(width); 
+rect.setLength(length); 
+
+cout << "The area of the rectangle is: " << rect.calculateArea()<< endl;
+
+return 0;
 
 }
